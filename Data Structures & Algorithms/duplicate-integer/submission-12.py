@@ -1,0 +1,14 @@
+class Solution:
+
+        def hasDuplicate(self, nums: list[int]) -> bool:
+                nums.sort() # O(n log n)
+
+                for i in range(1,len(nums)):
+                        if nums[i] == nums[i-1]:
+                                print(nums[i])
+                                print(nums[i-1])
+                                return True
+                
+                return False
+
+    
